@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Mind's Academy of the Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: verdana;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      box-shadow: 0 8px 15px #00FF00;
+      background-color: green;
+    }
+
+    #GMAP {
+      margin-right: auto;
+      letter-spacing: 5px;
+      font-size: 25px;
+    }
+
+    header li {
+      list-style: none;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: black;
+      transition: all 0.7s ease 0;
+    }
+
+    header a:hover {
+      color: white;
+      font-size: large;
+    }
+
+    .logo-container {
+      margin-right: auto;
+    }
+
+    .logo-container img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      color: white;
+    }
+
+    .dropdown-content a {
+      color: #000000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+   .footer {
+  position: fixed; 
+  left: 0; 
+  bottom: 0; 
+  width: 100%; 
+  background-color: green;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  z-index: 1000;=
+}
+
+div.gallery {
+  margin: 30px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+  align-items: center;
+  background-color: green;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+  </style>
+  <link rel="shortcut icon" type="x-icon" href="logo.png">
+</head>
+<body>
+ <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <h1 id="GMAP"><a href="newhome.html">Global Minds Academy of the Philippines</a></h1>
+    <nav>
+      <ul>
+        <li><a href="about.html" target="_self"><b>About</b></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn"><b>Student</b></a>
+          <div class="dropdown-content">
+            <a href="login.html" target="_blank">GAS</a>
+            <a href="login.html" target="_blank">ICT</a>
+            <a href="login.html" target="_blank">HUMSS</a>
+            <a href="login.html" target="_blank">HE</a>
+            <a href="login.html" target="_blank">ABM</a>
+          </div>
+        </li>
+        <li><a href="concon.html"><b>Contact</b></a></li>
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+<h1 align="center">GMAP NEWS</h1>
+<br><br>
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/photo?fbid=122177014262026195&set=a.122121773072026195">
+    <img src="News4.jpg" alt="Enrollment" width="1000" height="800">
+  </a>
+  <div class="desc">SHS VOUCHER APPLICATION FOR SY 2024-2025</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/photo?fbid=122176969556026195&set=pcb.122176969586026195">
+    <img src="news5.jpg" alt="SSG" width="600" height="400">
+  </a>
+  <div class="desc">UNITY STUDENTS ALLIANCE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/photo?fbid=122178731798026195&set=pcb.122178732950026195">
+    <img src="News1.jpg" alt="RESEARCH PROPOSAL DEFENSE" width="600" height="400">
+  </a>
+  <div class="desc">RESEARCH PROPOSAL DEFENSE</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="https://www.facebook.com/photo/?fbid=855828896564153&set=a.447457544067959">
+    <img src="News2.jpg" alt="ENROLLMENT SY 2024-2025" width="600" height="400">
+  </a>
+  <div class="desc">ENROLLMENT SY 2024-2025</div>
+</div>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024 Global Mind's Academy of the Philippines. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

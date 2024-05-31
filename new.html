@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Mind's Academy of the Philippines</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+   * {
+      margin: 0;
+      padding: 0;
+      font-family: verdana;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      box-shadow: 0 8px 15px #00FF00;
+      background-color: green;
+      z-index: 1000;
+    }
+
+    #GMAP {
+      margin-right: auto;
+      letter-spacing: 5px;
+      font-size: 25px;
+    }
+
+    header li {
+      list-style: none;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: black;
+      transition: all 0.7s ease 0;
+    }
+
+    header a:hover {
+      color: white;
+      font-size: large;
+    }
+
+    .logo-container {
+      margin-right: auto;
+    }
+
+    .logo-container img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      color: white;
+    }
+
+    .dropdown-content a {
+      color: #000000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .footer {
+      position: fixed; 
+      left: 0; 
+      bottom: 0; 
+      width: 100%; 
+      background-color: green;
+      color: black;
+      text-align: center;
+      padding: 5px;
+      z-index: 1000;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      margin-top: 100px; /* Adjust this value to position the form vertically */
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: green;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+
+    .message {
+      margin: 15px 0;
+      text-align: center;
+      color: red;
+    }
+  </style>
+  <link rel="shortcut icon" type="x-icon" href="logo.png">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <h1 id="GMAP"><a href="newhome.html">Global Minds Academy of the Philippines</a></h1>
+    <nav>
+      <ul>
+        <li><a href="about.html" target="_self">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Student</a>
+          <div class="dropdown-content">
+            <a href="login.html" target="_blank">GAS</a>
+            <a href="login.html" target="_blank">ICT</a>
+            <a href="login.html" target="_blank">HUMSS</a>
+            <a href="login.html" target="_blank">HE</a>
+            <a href="login.html" target="_blank">ABM</a>
+          </div>
+        </li>
+        <li><a href="concon.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <br><br>
+  <div class="container">
+    <h1>Student Registration</h1>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Password" required>
+
+      <label for="strand">Strand</label>
+      <select id="strand" required>
+        <option value="">Select Strand</option>
+        <option value="GAS">GAS</option>
+        <option value="ICT">ICT</option>
+        <option value="HUMSS">HUMSS</option>
+        <option value="HE">HE</option>
+        <option value="ABM">ABM</option>
+      </select>
+
+      <label for="grade">Grade Level</label>
+      <select id="grade" required>
+        <option value="">Select Grade Level</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+    <p class="message" id="message"></p>
+  </div>
+  <footer>
+    <div class="footer">
+      <p>&copy; 2024 Global Mind's Academy of the Philippines. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
