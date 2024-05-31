@@ -1,0 +1,1 @@
+# Global-Minds-Academy-of-the-Philippines
